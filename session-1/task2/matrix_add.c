@@ -7,7 +7,7 @@
 
  int main( void ) {
     float a[4][4];
-    float b[4][4];
+   float b[4][4];
     float c[4][4];
 
     /*
@@ -16,5 +16,20 @@
     Store your answer in matrix c
     Print your final answer
     */
+    
+    for (int k = 0; k < 4; k++) {
+      for (int j = 0; j < 4; j++) {
+         a[k][j] = 1;
+         b[k][j] = 1;
+      }
+    }
+
+    for (int k = 0; k < 4; k++) {
+      for (int j = 0; j < 4; j++) {
+         c[k][j] = a[k][j] + b[k][j];
+         printf("[%d][%d]: %f\n", k, j, c[k][j]);
+      }
+    }
+
     return 0;
  }

@@ -15,5 +15,11 @@
     Store your answer in d
     print your final answer
     */
+
+    for (int k = 0; k < 5; k++) {
+      d = d * a[k] + b[k];
+    }
+    printf("Dot product: %f", d);
+
     return 0;
  }

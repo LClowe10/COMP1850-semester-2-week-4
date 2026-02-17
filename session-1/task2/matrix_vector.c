@@ -16,5 +16,23 @@
     Store your answer in vector c
     Print your final answer
     */
+    for (int k = 0; k < 4; k++) {
+      for (int j = 0; j < 4; j++) {
+         a[k][j] = 1;
+      }
+    }
+
+    for (int k = 0; k < 4; k++) {
+      b[k] = 1;
+    }
+
+    for (int k = 0; k < 4; k++) {
+      for (int j = 0; j < 4; j++) {
+         c[k] = a[k][j] * b[k];
+         
+      }
+      printf("[%d]: %f\n", k, c[k]);
+    }
+
     return 0;
  }
