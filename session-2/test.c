@@ -1,16 +1,12 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 int main ( void ) {
-    int k = 3
-    float *pk = &k
+    int k = 3;
+    float *pk = &k;
 
-    printf( "%d \n", &pk );
+    printf( "%f\n", &pk );
 
-    printf( "%d \n", k );
-
-    printf( "%d \n", *pk );
-
-    printf( "%d \n", *k );
 
     return 0;
 }
