@@ -5,7 +5,7 @@ int main ( void ) {
     int k = 3;
     float *pk = &k;
 
-    printf( "%f\n", &pk );
+    printf( "%f\n", k);
 
 
     return 0;
